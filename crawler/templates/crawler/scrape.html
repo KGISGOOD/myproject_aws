@@ -1,20 +1,30 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-    <meta charset="UTF-8">
-    <title>PTT 食記爬蟲結果</title>
+    <meta charset="UTF-8" />
+    <title>PTT 食物版介紹</title>
 </head>
 <body>
-    <h1>🍜 爬蟲結果 - PTT 食記版</h1>
-    <ul>
-        {% for item in results %}
-            <li>{{ item }}</li>
-        {% empty %}
-            <li>😢 沒有找到文章</li>
-        {% endfor %}
-    </ul>
-    <a href="/">
-        <button>返回首頁</button>
-    </a>
+    <h1>PTT 食物版介紹</h1>
+    <p>
+        PTT 食物版是台灣最大的網路論壇 PTT（批踢踢實業坊）中，專門討論與分享美食相關資訊的版面。
+        在這裡，使用者可以發表食記、餐廳推薦、烹飪心得，並與其他美食愛好者互動交流。
+    </p>
+    <p>
+        食物版涵蓋的話題相當廣泛，包括餐廳評價、料理食譜、零食分享、地方美食介紹等。
+        版上的文章通常包含詳細的食物照片與個人感想，是許多喜愛探索美食者的重要參考來源。
+    </p>
+    <p>
+        由於 PTT 食物版文章更新快速且內容豐富，對於想要了解最新餐飲趨勢、尋找在地美味或分享美食故事的朋友來說，是一個非常活躍且有價值的社群平台。
+    </p>
+    <p>
+        若你對美食有興趣，歡迎造訪 PTT 食物版，與眾多美食愛好者一同交流分享！
+    </p>
+    <p>
+        PTT 食物版網址：<a href="https://www.ptt.cc/bbs/Food/index.html" target="_blank" rel="noopener noreferrer">https://www.ptt.cc/bbs/Food/index.html</a>
+    </p>
+
+    <!-- 返回主頁按鈕 -->
+    <p><a href="{% url 'index' %}">返回主頁</a></p>
 </body>
 </html>
