@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>PTT 食記爬蟲結果</title>
+</head>
+<body>
+    <h1>🍜 爬蟲結果 - PTT 食記版</h1>
+    <ul>
+        {% for item in results %}
+            <li>{{ item }}</li>
+        {% empty %}
+            <li>😢 沒有找到文章</li>
+        {% endfor %}
+    </ul>
+    <a href="/">
+        <button>返回首頁</button>
+    </a>
+</body>
+</html>
